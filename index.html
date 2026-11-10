@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <meta name="theme-color" content="#241634">
+  <title>GTBuy spreadsheet | Guia de tamanhos, fotos QC e envio</title>
+  <meta name="description" content="Guia em português do GTBuy spreadsheet. Explore categorias no Hipobuyfind e aprenda a comparar links de produtos, medidas, fotos QC e custos de envio.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="GTBuy spreadsheet | Guia de tamanhos, fotos QC e envio">
+  <meta property="og:description" content="Categorias de moda e um guia prático para comparar anúncios, medidas, fotos de inspeção e envio.">
+  <meta property="og:image" content="https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/056/825/272/original/581781_06.jpg.jpeg?action=crop&amp;width=720">
+  <meta property="og:image:alt" content="Vista traseira de um par de Nike Air Max 90 em preto e branco">
+  <link rel="preconnect" href="https://image.goat.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23241634'/%3E%3Cpath d='M9 8v16m14-16v16M9 16h14' stroke='%23eff990' stroke-width='3'/%3E%3C/svg%3E">
+  <style>
+    :root{color-scheme:light;--ink:#241634;--paper:#f7f3fb;--lav:#e8d9f5;--lime:#eff990;--line:#cdbdd8;--muted:#534461}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.1;text-wrap:balance}
+    h1{font-size:clamp(2.45rem,6.1vw,5.6rem);letter-spacing:-.06em;overflow-wrap:anywhere}
+    h2{font-size:clamp(1.65rem,3.5vw,2.6rem);letter-spacing:-.04em}
+    h3{font-size:1.22rem}
+    a{color:inherit;text-underline-offset:.2em}
+    :focus-visible{outline:3px solid #7e39a9;outline-offset:4px}
+    .dark :focus-visible{outline-color:var(--lime)}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    .dark{background:var(--ink);color:var(--paper)}
+    .bar{display:flex;justify-content:space-between;align-items:center;gap:.4rem 1rem;flex-wrap:wrap;min-height:3.5rem;padding-block:.35rem}
+    .brand{font-weight:750;overflow-wrap:anywhere}
+    .tag,.index{font-size:.77rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+    .bar .tag{color:var(--lime)}
+    .hero{display:grid;grid-template-columns:1.2fr 1fr;background:var(--lav);margin-top:1rem}
+    .hero-copy{padding:clamp(1.2rem,4.5vw,3.6rem);align-self:center}
+    .hero-copy p+p,.hero-copy h1+p{margin-top:.9rem}
+    .hero-copy h1{margin-top:.5rem}
+    .lead{max-width:54ch}
+    .hero figure{align-self:center;margin:clamp(.65rem,2vw,1.25rem);background:#fff}
+    img{display:block;width:100%;height:auto}
+    figcaption{padding:.55rem .75rem;font-size:.85rem}
+    .hero figcaption{background:var(--lime);font-weight:700}
+    section{margin-block:clamp(2rem,5vw,4rem)}
+    .section-head{display:flex;align-items:baseline;justify-content:space-between;gap:.5rem 1rem;flex-wrap:wrap;margin-bottom:1rem}
+    .categories{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:1px;border:1px solid var(--line);background:var(--line);list-style:none;margin:0;padding:0}
+    .categories a{display:flex;flex-direction:column;justify-content:center;gap:.18rem;min-height:4.65rem;height:100%;padding:.7rem;background:#fff;font-weight:700;text-decoration:none;overflow-wrap:anywhere}
+    .categories a:hover{background:var(--lime);text-decoration:underline}
+    .categories small{font-size:.8rem;font-weight:500;color:var(--muted)}
+    .editorial{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.65rem}
+    .editorial figure{background:#fff;border:1px solid var(--line)}
+    .editorial img{aspect-ratio:1;object-fit:contain;background:#fff}
+    .note{color:var(--muted);font-size:.93rem;margin-top:.65rem}
+    .articles{border-block:1px solid var(--line)}
+    article{display:grid;grid-template-columns:minmax(10rem,.8fr) minmax(0,2fr);gap:.7rem 2rem;padding:1.15rem .25rem}
+    article+article{border-top:1px solid var(--line)}
+    article p{max-width:72ch}
+    .faq{background:var(--lav);padding:clamp(1rem,3vw,2rem)}
+    details{border-bottom:1px solid var(--line)}
+    summary{padding:.75rem 0;font-weight:750;cursor:pointer}
+    details p{padding:0 0 .85rem;max-width:72ch}
+    .foot{padding-block:1.1rem}
+    .cta{display:inline-flex;align-items:center;min-height:44px;margin-top:.95rem;padding:.35rem .85rem;background:var(--ink);color:#fff;font-weight:750}
+    @media(max-width:760px){
+      .hero{grid-template-columns:1fr}
+      .categories{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .editorial{grid-template-columns:repeat(2,minmax(0,1fr))}
+      article{grid-template-columns:1fr}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"WebPage",
+        "name":"GTBuy spreadsheet | Guia de tamanhos, fotos QC e envio",
+        "description":"Guia em português do GTBuy spreadsheet. Explore categorias no Hipobuyfind e aprenda a comparar links de produtos, medidas, fotos QC e custos de envio.",
+        "inLanguage":"pt",
+        "about":{"@type":"Thing","name":"Pesquisa de produtos, tamanhos e fotos de inspeção antes da compra"}
+      },
+      {
+        "@type":"FAQPage",
+        "inLanguage":"pt",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"O que é um GTBuy spreadsheet?",
+            "acceptedAnswer":{"@type":"Answer","text":"É uma lista de pesquisa que pode reunir links de produtos, variantes, medidas e referências de inspeção. Use-a para comparar opções e confirme os dados na ficha do vendedor."}
+          },
+          {
+            "@type":"Question",
+            "name":"As fotos QC confirmam a autenticidade?",
+            "acceptedAnswer":{"@type":"Answer","text":"As fotos QC ajudam a verificar o estado visível, a cor e o acabamento do artigo fotografado. Para verificar a autenticidade, procure documentação de origem ou um serviço de autenticação independente."}
+          },
+          {
+            "@type":"Question",
+            "name":"Como escolher o tamanho dos ténis?",
+            "acceptedAnswer":{"@type":"Answer","text":"Meça ambos os pés, use o comprimento do maior em centímetros e consulte a tabela da variante escolhida. Se a tabela usar medidas da palmilha, compare com a palmilha de um par que lhe sirva."}
+          },
+          {
+            "@type":"Question",
+            "name":"Como estimar o custo total da compra?",
+            "acceptedAnswer":{"@type":"Answer","text":"Use o destino e as dimensões da caixa final para consultar as tarifas disponíveis. Some o preço do artigo, os portes internos, o envio internacional e os impostos ou encargos aplicáveis ao destino."}
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/uzoab/">
+</head>
+<body>
+  <header class="dark">
+    <div class="wrap bar">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <span class="tag">Guia de compra em português</span>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <div class="hero-copy">
+        <p class="index">Caderno de compras · edição 01</p>
+        <h1>GTBuy spreadsheet</h1>
+        <p class="lead">Uma lista de pesquisa ajuda a guardar links de produtos e a comparar modelos, tamanhos e fotos de controlo de qualidade (QC). Use este guia independente para montar a sua lista e explore as categorias do Hipobuyfind para encontrar opções.</p>
+      </div>
+      <figure>
+        <img src="https://image.goat.com/transform/v1/attachments/product_template_additional_pictures/images/056/825/272/original/581781_06.jpg.jpeg?action=crop&amp;width=720" width="750" height="504" alt="Vista traseira de um par de Nike Air Max 90 em preto e branco" fetchpriority="high" loading="eager">
+        <figcaption>01 · Nike Air Max 90 — compare a altura e a simetria dos calcanhares.</figcaption>
+      </figure>
+    </div>
+
+    <section aria-labelledby="categorias">
+      <div class="section-head">
+        <h2 id="categorias">Explore por categoria</h2>
+        <span class="index">10 categorias no Hipobuyfind</span>
+      </div>
+      <nav aria-label="Categorias de produtos">
+        <ul class="categories">
+          <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Calçado <small>Ténis e sapatos</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Camisolas <small>Com ou sem capuz</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-shirts <small>Básicas e estampadas</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Casacos <small>Corta-ventos e acolchoados</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Calças e calções <small>Modelos de ganga e desportivos</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Chapéus <small>Bonés e gorros</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-917-Sets.html">Conjuntos <small>Peças a combinar</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Roupa interior <small>Boxers e cuecas</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Camisolas desportivas <small>Equipamentos de futebol</small></a></li>
+          <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Acessórios <small>Malas, cintos e joalharia</small></a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section aria-labelledby="detalhes">
+      <div class="section-head">
+        <h2 id="detalhes">Quatro detalhes para comparar</h2>
+        <span class="index">Referências visuais</span>
+      </div>
+      <div class="editorial">
+        <figure>
+          <img src="https://fr.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-tee-shirt-a-signature-cursive--FUTB03UOL900_PM1_Cropped%20view.png?wid=400&amp;hei=400&amp;fmt=webp" width="400" height="400" alt="Modelo com t-shirt preta Louis Vuitton e assinatura em letras brancas" loading="lazy" decoding="async">
+          <figcaption><strong>Louis Vuitton</strong> · Posição do estampado e largura dos ombros.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.thedoublef.com/cdn/shop/files/4817743HC65_S_GUC-2140.a.jpg?v=1771536782&amp;width=400" width="400" height="400" alt="Boné Gucci bege com padrão GG e pala curva" loading="lazy" decoding="async">
+          <figcaption><strong>Gucci</strong> · Curvatura da pala e continuidade do padrão.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://www.oliverjewellery.ca/cdn/shop/files/Hermes-Palladium-Plated-Orange-Enamel-Clic-H-Bracelet-w-Box_f80dab0b.jpg?v=1744110722&amp;width=400" width="400" height="400" alt="Pulseira Hermès Clic H em esmalte laranja com fecho prateado" loading="lazy" decoding="async">
+          <figcaption><strong>Hermès</strong> · Acabamento do esmalte e junção do fecho.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/LOOK_H_25_2_LOOK_154_E39?%24lookDefault_GH-GHC%24=&amp;bfc=on&amp;crop=496%2C0%2C2008%2C2000&amp;wid=400&amp;qlt=80" width="400" height="399" alt="Modelo com colar Dior CD Icon de elos prateados sobre uma t-shirt branca" loading="lazy" decoding="async">
+          <figcaption><strong>Dior</strong> · Espessura dos elos e comprimento do colar.</figcaption>
+        </figure>
+      </div>
+      <p class="note">As imagens são referências editoriais. Confirme a disponibilidade, a variante e as fotos do artigo na respetiva ficha.</p>
+    </section>
+
+    <section aria-labelledby="guias">
+      <div class="section-head">
+        <h2 id="guias">Da lista à encomenda</h2>
+        <span class="index">Três guias práticos</span>
+      </div>
+      <div class="articles">
+        <article>
+          <h3>Links de produtos GTBuy</h3>
+          <p>Guarde o link original do vendedor e a referência do produto na mesma linha. Em anúncios da Weidian, Taobao ou 1688, selecione a variante de cor e tamanho antes de registar o preço na moeda indicada. Se um anúncio deixar de abrir, marque o link como indisponível. Ao procurar um substituto, compare também os materiais e a política de devolução.</p>
+        </article>
+        <article>
+          <h3>Guia de tamanhos e fotos QC</h3>
+          <p>Para roupa, compare a largura do peito, o comprimento da manga e a altura total com uma peça que já lhe serve, medida sobre uma mesa. Nas fotos QC do armazém, confira a etiqueta de tamanho e o alinhamento das costuras. Para calçado, observe a sola, os calcanhares e o comprimento da palmilha. Peça uma fotografia com régua se faltar uma medida decisiva.</p>
+        </article>
+        <article>
+          <h3>Envio internacional e custo total</h3>
+          <p>Compare o peso real com o peso volumétrico quando tiver as dimensões da embalagem. Antes de consolidar encomendas, veja se juntar artigos altera o escalão de portes. Para entregas em Portugal ou no Brasil, consulte as condições aplicáveis ao destino e confirme quem cobra os encargos de importação. Guarde a estimativa com a moeda e a data da consulta.</p>
+        </article>
+      </div>
+      <a class="cta" href="https://www.hipobuyfind.com">Explorar o catálogo no Hipobuyfind</a>
+    </section>
+
+    <section class="faq" aria-labelledby="perguntas">
+      <div class="section-head"><h2 id="perguntas">Perguntas frequentes</h2></div>
+      <details open>
+        <summary>O que é um GTBuy spreadsheet?</summary>
+        <p>É uma lista de pesquisa que pode reunir links de produtos, variantes, medidas e referências de inspeção. Use-a para comparar opções e confirme os dados na ficha do vendedor.</p>
+      </details>
+      <details>
+        <summary>As fotos QC confirmam a autenticidade?</summary>
+        <p>As fotos QC ajudam a verificar o estado visível, a cor e o acabamento do artigo fotografado. Para verificar a autenticidade, procure documentação de origem ou um serviço de autenticação independente.</p>
+      </details>
+      <details>
+        <summary>Como escolher o tamanho dos ténis?</summary>
+        <p>Meça ambos os pés, use o comprimento do maior em centímetros e consulte a tabela da variante escolhida. Se a tabela usar medidas da palmilha, compare com a palmilha de um par que lhe sirva.</p>
+      </details>
+      <details>
+        <summary>Como estimar o custo total da compra?</summary>
+        <p>Use o destino e as dimensões da caixa final para consultar as tarifas disponíveis. Some o preço do artigo, os portes internos, o envio internacional e os impostos ou encargos aplicáveis ao destino.</p>
+      </details>
+    </section>
+  </main>
+  <footer class="dark">
+    <div class="wrap bar foot">
+      <a class="brand" href="https://www.hipobuyfind.com">www.hipobuyfind.com</a>
+      <small>Guia editorial independente · As marcas identificam as referências visuais.</small>
+    </div>
+  </footer>
+  <!-- Pesquisa editorial: a página de resultados do Google devolveu HTTP 429.
+       Dez domínios consultados no índice alternativo, sem atribuição de posições:
+       gtbuy.world, gtbuyspreadsheets.com, spreadsheetgtbuy.com, gtbuyindex.com,
+       chinagrails.com, gtbuybuy.com, chinafinds.app, spreadsheet-gtbuy.com,
+       qcradar.com, gtbuyagent.com. Temas: categorias, links, medidas, QC e envio. -->
+</body>
+</html>
